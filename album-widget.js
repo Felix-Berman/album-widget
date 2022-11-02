@@ -1,13 +1,15 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
 // icon-color: green; icon-glyph: magic;
+
+
 // fill in user specific data
-const apiKey = ''
+const apiKey = ''	// last.fm api key
 const user = '' // lastfm user name
 const period = '7day' // time period (overall | 7day | 1month | 3month | 6month | 12month)
 const imageQuality = 3 // 0-3 low to high
-// choose if album covers are packed tightly
-const tight = false
+const tight = false	// choose if album covers are packed tightly
+// end of user specific data
 
 const url = 'http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=' + user + '&period=' + period + '&api_key=' + apiKey + '&format=json'
 
@@ -20,8 +22,8 @@ if (config.runsInWidget) {
   	Script.setWidget(widget)
 } else {
 	let image = makeChart()
-// 	Photos.save(image)
-  	widget.presentLarge()
+	Photos.save(image)
+  	// widget.presentLarge()
 }
 
 Script.complete()
