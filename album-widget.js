@@ -1,8 +1,3 @@
-// Variables used by Scriptable.
-// These must be at the very top of the file. Do not edit.
-// icon-color: green; icon-glyph: magic;
-
-
 // fill in user specific data
 const apiKey = ''	// last.fm api key
 const user = '' // lastfm user name
